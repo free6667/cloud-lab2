@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>云计算与分布式系统 · 实验2 - 云环境下的服务器环境搭建</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    color: #eaf2f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 720px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 48px 44px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  }
+  .tag {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #7fd7ff;
+    border: 1px solid rgba(127, 215, 255, 0.4);
+    border-radius: 999px;
+    padding: 5px 16px;
+    margin-bottom: 22px;
+  }
+  h1 { font-size: 30px; line-height: 1.4; margin-bottom: 10px; }
+  h2 { font-size: 17px; font-weight: normal; color: #b8cbd8; margin-bottom: 34px; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 34px;
+  }
+  .info {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .info .label { font-size: 12px; color: #8aa5b5; margin-bottom: 6px; letter-spacing: 1px; }
+  .info .value { font-size: 16px; color: #ffffff; font-weight: 600; }
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(46, 204, 113, 0.12);
+    border: 1px solid rgba(46, 204, 113, 0.35);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+  .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: #2ecc71;
+    box-shadow: 0 0 10px #2ecc71;
+    animation: pulse 1.6s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+  footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #7d95a5;
+    line-height: 1.8;
+  }
+  code {
+    background: rgba(255,255,255,0.08);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    color: #7fd7ff;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="tag">GITHUB PAGES · 云端 WEB 服务器</div>
+    <h1>云计算与分布式系统 · 实验 2</h1>
+    <h2>云环境下的服务器环境搭建 —— 页面已成功发布，你能看到它就说明部署成功了。</h2>
+
+    <div class="grid">
+      <div class="info">
+        <div class="label">部署平台</div>
+        <div class="value">GitHub Pages</div>
+      </div>
+      <div class="info">
+        <div class="label">服务器类型</div>
+        <div class="value">静态 Web 服务器</div>
+      </div>
+      <div class="info">
+        <div class="label">课程名称</div>
+        <div class="value">云计算与分布式系统</div>
+      </div>
+      <div class="info">
+        <div class="label">实验编号</div>
+        <div class="value">实验 2</div>
+      </div>
+    </div>
+
+    <div class="status"><span class="dot"></span>服务器运行中 · HTTP 200 OK · 全球 CDN 加速</div>
+
+    <footer>
+      本页面由 GitHub Pages 免费托管，无需绑定银行卡或信用卡。<br>
+      源码托管于 GitHub 仓库，推送 <code>main</code> 分支后自动构建发布。
+    </footer>
+  </main>
+</body>
+</html>
